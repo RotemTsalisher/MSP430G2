@@ -1,0 +1,25 @@
+#include <msp430.h> 
+
+#define BLINK_ 5000
+#define TRUE   1
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	volatile int i = 0;
+
+    WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+	P1DIR = 0xFF;
+	P1OUT = 0x01;
+
+	while(TRUE)
+	{
+	    P1OUT ^= 0x01;
+	    for(i = 0; i<BLINK_; i++);
+	}
+
+	return 0;
+}

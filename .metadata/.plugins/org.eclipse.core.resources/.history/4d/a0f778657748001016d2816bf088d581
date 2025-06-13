@@ -1,0 +1,40 @@
+#include <msp430.h> 
+#include <stdio.h>
+
+#define BLINK_ 20000
+#define TRUE   1
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	volatile int j,i = 0;
+	
+	P1OUT |= ((IFG1&WDTIFG)<<7);
+	if(IFG1&WDTIFG)
+	{
+	    IFG1 &= (~WDTIFG);
+	    WDTCTL = WDTPW | WDTHOLD;
+	}
+    	// stop watchdog timer
+
+	P1DIR = 0xFF;
+	P1OUT = 0x01;
+
+	// startup sequence:
+	for(i =1 ; i<5; i++)
+	{
+	    P1OUT ^= (0x01<<6);
+	    for(j = 0; j<BLINK_; j++);
+	}
+
+	//program
+	while(TRUE)
+	{
+	    P1OUT ^= 0x01;
+	    for(i = 0; i<BLINK_; i++);
+	}
+
+	return 0;
+}
