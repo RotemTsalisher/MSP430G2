@@ -22,13 +22,11 @@ int main(void)
 	    IFG1 &= (~WDTIFG);
 	    for(j = 0; j<BLINK_; j++);
 	}
-	else
+
+	for(i =1 ; i<5; i++)
 	{
-	    for(i =1 ; i<5; i++)
-	    {
-	        P1OUT ^= (0x01<<6);
-	        for(j = 0; j<BLINK_; j++);
-	    }
+	    P1OUT ^= (0x01<<6);
+	    for(j = 0; j<BLINK_; j++);
 	}
 
 
