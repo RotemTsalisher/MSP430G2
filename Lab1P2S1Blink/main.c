@@ -17,6 +17,7 @@ int main(void)
 	P1OUT = 0x01<<3;
 	P1REN = 0x01<<3;
 	P1DIR = 0x01;
+	P1IE  = 0x01<<3;
 	
 	while(TRUE)
 	{

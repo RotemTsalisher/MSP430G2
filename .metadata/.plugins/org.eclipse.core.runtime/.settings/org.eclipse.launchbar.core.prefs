@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:test001,org.eclipse.launchbar.core.descriptorType.default\:WDTPUCTest,org.eclipse.launchbar.core.descriptorType.default\:WDTClear,org.eclipse.launchbar.core.descriptorType.default\:Lab1,org.eclipse.launchbar.core.descriptorType.default\:Lab1P1q4,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2PullUp,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2PullDown,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2q8,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2S1Blink
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test001,org.eclipse.launchbar.core.descriptorType.default\:WDTPUCTest,org.eclipse.launchbar.core.descriptorType.default\:WDTClear,org.eclipse.launchbar.core.descriptorType.default\:Lab1,org.eclipse.launchbar.core.descriptorType.default\:Lab1P1q4,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2PullUp,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2PullDown,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2q8,org.eclipse.launchbar.core.descriptorType.default\:Lab1P2S1Blink,org.eclipse.launchbar.core.descriptorType.default\:Lab2q1,org.eclipse.launchbar.core.descriptorType.default\:Lab2Polling
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Lab1/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Lab1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
